@@ -44,5 +44,3 @@ document.addEventListener("keydown", function (e) {
     document.getElementById("image").classList.add("hidden");
   }
 });
-
-console.log(e.key);
