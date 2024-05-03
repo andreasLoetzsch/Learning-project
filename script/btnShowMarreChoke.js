@@ -27,6 +27,9 @@ function btnBack() {
   chokeMarre.currentTime = 0;
   document.getElementById("image").classList.add("hidden");
   document.getElementById("form").classList.remove("hidden");
+  document
+    .querySelector(".box-list-outer-container")
+    .classList.remove("hidden");
 }
 
 document.addEventListener("keydown", function (e) {
@@ -42,5 +45,8 @@ document.addEventListener("keydown", function (e) {
     chokeMarre.currentTime = 0;
     document.getElementById("form").classList.remove("hidden");
     document.getElementById("image").classList.add("hidden");
+    document
+      .querySelector(".box-list-outer-container")
+      .classList.remove("hidden");
   }
 });

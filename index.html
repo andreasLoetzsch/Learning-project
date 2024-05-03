@@ -11,11 +11,29 @@
     <link rel="stylesheet" href="styles/marreChoke.css" />
     <link rel="stylesheet" href="styles/globalStyle.css" />
     <link rel="stylesheet" href="styles/underDaniel.css" />
+    <link rel="stylesheet" href="styles/underDanielList.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="main-component">
       <div>
+        <div class="box-list-outer-container">
+          <form id="list">
+            <input
+              placeholder="Write name"
+              type="text"
+              class="input-name-list"
+            />
+            <input
+              class="search-under-daniel-list"
+              type="submit"
+              value="search"
+            />
+          </form>
+          <div class="box-list-container">
+            <div class="box-list" id="list-text"></div>
+          </div>
+        </div>
         <div>
           <img class="hidden" id="image" />
           <form id="form">
@@ -60,6 +78,7 @@
   <script src="script/shoppingList.js"></script>
   <script src="script/btnShowMarreChoke.js"></script>
   <script src="script/underDaniel.js"></script>
+  <script src="script/underDanielList.js"></script>
   <script>
     document
       .querySelector(".message-btn")
