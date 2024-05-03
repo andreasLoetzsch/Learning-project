@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles/message.css" />
+    <link rel="stylesheet" href="styles/shoppingList.css" />
+    <link rel="stylesheet" href="styles/marreChoke.css" />
+    <link rel="stylesheet" href="styles/globalStyle.css" />
+    <link rel="stylesheet" href="styles/underDaniel.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-component">
+      <div>
+        <div>
+          <img class="hidden" id="image" />
+          <form id="form">
+            <input
+              name="name"
+              placeholder="Write name"
+              type="text"
+              id="name"
+              class="input-under-daniel"
+            />
+            <input
+              name="number"
+              placeholder="Write a number"
+              type="text"
+              id="number"
+              class="input-under-daniel"
+            />
+            <input class="search-under-daniel" type="submit" value="search" />
+          </form>
+        </div>
+        <div>
+          <button class="marre-choke-button">Press to see marre choke</button>
+          <button class="hidden" id="back-button">Back</button>
+          <video class="hidden" id="marre-choke" controls>
+            <source src="compChoke.mp4" type="video/mp4" />
+            your browser does not support the video tag.
+          </video>
+        </div>
+        <button class="message-btn">message</button>
+      </div>
+      <div class="shopping-list-outer-container">
+        <span>Here you can write your shopping list!</span>
+        <div class="shopping-list-container"></div>
+        <div class="shopping-list-controller">
+          <button class="save-button">save</button>
+          <input type="text" id="user-input" class="input-bar" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script/message.js"></script>
+  <script src="script/shoppingList.js"></script>
+  <script src="script/btnShowMarreChoke.js"></script>
+  <script src="script/underDaniel.js"></script>
+  <script>
+    document
+      .querySelector(".message-btn")
+      .addEventListener("click", function () {
+        messageBox({
+          status: "success",
+          title: "success",
+          description: "We successfully got the information",
+        });
+      });
+    document
+      .querySelector(".save-button")
+      .addEventListener("click", function () {
+        btnSave();
+      });
+    document
+      .querySelector(".marre-choke-button")
+      .addEventListener("click", function () {
+        marreChoke();
+      });
+    document
+      .getElementById("back-button")
+      .addEventListener("click", function () {
+        btnBack();
+      });
+  </script>
+</html>

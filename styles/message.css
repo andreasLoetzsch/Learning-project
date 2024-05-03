@@ -1,0 +1,25 @@
+.message-box-container {
+  height: 80px;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.message-box-header {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.message-box-title {
+  font-size: 25px;
+  margin-left: 5px;
+  font-weight: 800;
+}
+.message-box-body {
+}
+.message-box-description {
+  margin-left: 5px;
+}
+.message-box-outer-container {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
