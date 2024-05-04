@@ -1,0 +1,21 @@
+.box-list-outer-container {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.box-list-container {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  z-index: -1;
+}
+.box-list {
+  margin-left: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#list-text {
+  display: flex;
+  flex-direction: column;
+}

@@ -9,6 +9,7 @@ function hideSite() {
   document.querySelector(".message-btn").classList.add("hidden");
   backBtn.classList.remove("hidden");
   document.getElementById("form").classList.add("hidden");
+  document.querySelector(".box-list-outer-container").classList.add("hidden");
 }
 
 form.addEventListener("submit", function (e) {
