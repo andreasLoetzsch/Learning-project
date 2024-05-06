@@ -1,7 +1,7 @@
+.header-text {
+  font: 5px;
+}
 .box-list-outer-container {
-  position: fixed;
-  right: 10px;
-  top: 10px;
 }
 .box-list-container {
   width: 300px;

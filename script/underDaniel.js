@@ -1,15 +1,10 @@
 let image = document.getElementById("image");
 let form = document.getElementById("form");
+let backBtn = document.querySelector("#back-button");
 
 function hideSite() {
-  document
-    .querySelector(".shopping-list-outer-container")
-    .classList.add("hidden");
-  document.querySelector(".marre-choke-button").classList.add("hidden");
-  document.querySelector(".message-btn").classList.add("hidden");
   backBtn.classList.remove("hidden");
   document.getElementById("form").classList.add("hidden");
-  document.querySelector(".box-list-outer-container").classList.add("hidden");
 }
 
 form.addEventListener("submit", function (e) {
@@ -22,3 +17,9 @@ form.addEventListener("submit", function (e) {
   image.classList.remove("hidden");
   hideSite();
 });
+
+function btnBack() {
+  backBtn.classList.add("hidden");
+  document.getElementById("image").classList.add("hidden");
+  document.getElementById("form").classList.remove("hidden");
+}
