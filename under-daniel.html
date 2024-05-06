@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Under Daniel</title>
+    <link rel="stylesheet" href="styles/underDaniel.css" />
+    <link rel="stylesheet" href="styles/globalStyle.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1>
+          Just write the name and which number and you will see that persons
+          under daniel image
+        </h1>
+      </header>
+      <div class="under-daniel-img-container">
+        <img class="hidden" id="image" />
+        <button class="hidden" id="back-button">Back</button>
+        <form id="form">
+          <input
+            name="name"
+            placeholder="Write name"
+            type="text"
+            id="name"
+            class="input-under-daniel"
+          />
+          <input
+            name="number"
+            placeholder="Write a number"
+            type="text"
+            id="number"
+            class="input-under-daniel"
+          />
+          <input class="search-under-daniel" type="submit" value="search" />
+        </form>
+        <div class="box-list-outer-container, hidden">
+          <form id="list">
+            <input
+              placeholder="Write name"
+              type="text"
+              class="input-name-list"
+            />
+            <input
+              class="search-under-daniel-list"
+              type="submit"
+              value="search"
+            />
+          </form>
+          <div class="box-list-container">
+            <div class="box-list" id="list-text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="home-button"><a href="index.html">Go back to Home</a></div>
+    </main>
+  </body>
+  <script src="script/underDaniel.js"></script>
+  <script>
+    document
+      .getElementById("back-button")
+      .addEventListener("click", function () {
+        btnBack();
+      });
+  </script>
+</html>

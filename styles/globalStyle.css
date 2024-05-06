@@ -1,3 +1,8 @@
 .hidden {
   display: none;
 }
+.home-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

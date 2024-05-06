@@ -1,4 +1,5 @@
 let listText = document.getElementById("list-text");
+let image = document.getElementById("image");
 // let img = document.getElementById("image");
 
 const andreasUnder = [
@@ -105,3 +106,7 @@ formList.addEventListener("submit", function (e) {
     }
   }
 });
+function hideSite() {
+  backBtn.classList.remove("hidden");
+  document.querySelector(".box-list-outer-container").classList.add("hidden");
+}

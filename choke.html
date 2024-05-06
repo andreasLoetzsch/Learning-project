@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/marreChoke.css" />
+    <link rel="stylesheet" href="styles/globalStyle.css" />
+    <title>Choke</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Press the respective button for the player to see them choke in cs
+      </h1>
+      <div class="choke-container">
+        <button class="marre-choke-button">Press to see Marre choke</button>
+        <button class="timmie-choke-button">Press to see Timmie choke</button>
+        <button class="erik-choke-button">Press to see Erik choke</button>
+        <button class="hidden" id="back-button">Back</button>
+        <video class="hidden" id="marre-choke" controls>
+          <source
+            src="video/marreCompChoke.mp4
+          "
+            type="video/mp4"
+          />
+          your browser does not support the video tag.
+        </video>
+        <video class="hidden" id="erik-choke" controls>
+          <source
+            src="video/baek-ak.mp4
+            "
+            type="video/mp4"
+          />
+          your browser does not support the video tag.
+        </video>
+        <video class="hidden" id="timmie-choke" controls>
+          <source
+            src="video/timmie-pistol.mp4
+              "
+            type="video/mp4"
+          />
+          your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="home-button">
+        <a href="index.html">Go back to home</a>
+      </div>
+    </main>
+    <script src="script/choke.js"></script>
+    <script>
+      document
+        .querySelector(".marre-choke-button")
+        .addEventListener("click", function () {
+          marreChoke();
+        });
+      document
+        .getElementById("back-button")
+        .addEventListener("click", function () {
+          btnBack();
+        });
+      document
+        .querySelector(".erik-choke-button")
+        .addEventListener("click", function () {
+          erikChoke();
+        });
+      document
+        .querySelector(".timmie-choke-button")
+        .addEventListener("click", function () {
+          timmieChoke();
+        });
+    </script>
+  </body>
+</html>
