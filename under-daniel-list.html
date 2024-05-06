@@ -26,14 +26,23 @@
             value="search"
           />
         </form>
+
         <div class="box-list-container">
           <div class="box-list" id="list-text"></div>
         </div>
       </div>
+      <button class="hidden" id="back-button">Back</button>
     </main>
     <div class="home-button">
       <a href="index.html">Go back to home</a>
     </div>
     <script src="script/underDanielList.js"></script>
+    <script>
+      document
+        .getElementById("back-button")
+        .addEventListener("click", function () {
+          btnBack();
+        });
+    </script>
   </body>
 </html>

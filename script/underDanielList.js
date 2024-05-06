@@ -1,6 +1,18 @@
 let listText = document.getElementById("list-text");
 let image = document.getElementById("image");
+let backBtn = document.getElementById("back-button");
 // let img = document.getElementById("image");
+function hideSite() {
+  backBtn.classList.remove("hidden");
+  document.querySelector(".box-list-outer-container").classList.add("hidden");
+}
+function btnBack() {
+  backBtn.classList.add("hidden");
+  document.getElementById("image").classList.add("hidden");
+  document
+    .querySelector(".box-list-outer-container")
+    .classList.remove("hidden");
+}
 
 const andreasUnder = [
   "andreas-1.png",
@@ -106,7 +118,3 @@ formList.addEventListener("submit", function (e) {
     }
   }
 });
-function hideSite() {
-  backBtn.classList.remove("hidden");
-  document.querySelector(".box-list-outer-container").classList.add("hidden");
-}
