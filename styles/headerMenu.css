@@ -1,24 +1,63 @@
+.main-component {
+  margin-top: 10px;
+}
 .header-container {
   background-color: #333;
   padding: 10px 0;
   color: #fff;
 }
-nav ul {
+.ul {
   list-style-type: none;
   margin: 10;
   padding: 10;
 }
 
-nav ul li {
+.link {
   display: inline;
   margin-right: 50px;
 }
 
-nav ul li a {
+.text {
   color: white;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+.text:hover {
   color: yellow;
 }
+.info-outer-container {
+  position: relative;
+  display: inline-block;
+}
+.info-container {
+}
+#image {
+  width: 942px;
+  z-index: -1;
+}
+.intro-section {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  width: 800px;
+}
+.intro-header {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.intro-information {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* .about-me-outer-container {
+  position: fixed;
+  background-color: black;
+  bottom: 0;
+  padding: 10px 0;
+} */
