@@ -1,0 +1,57 @@
+.clock-outer-container {
+  position: relative;
+  margin-top: 10px;
+}
+.clock-container {
+  border: 5px solid black;
+  width: 933px;
+  height: 250px;
+  background-color: grey;
+}
+.clock-sweden {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.hour-hand {
+  position: absolute;
+  width: 6px;
+  height: 50px;
+  background-color: black;
+  transform-origin: center bottom;
+  top: 25%;
+  left: 48.5%;
+}
+.minute-hand {
+  position: absolute;
+  width: 4px;
+  height: 70px;
+  background-color: black;
+  transform-origin: center bottom;
+  top: 15%;
+  left: 49%;
+}
+.second-hand {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background-color: red;
+  transform-origin: center bottom;
+  top: 10%;
+  left: 49.5%;
+}
+.center-circle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
