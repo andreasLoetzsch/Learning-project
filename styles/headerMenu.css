@@ -3,6 +3,7 @@
   padding: 10px 0;
   color: #fff;
 }
+
 .ul {
   list-style-type: none;
   margin: 10;
@@ -22,30 +23,43 @@
 .text:hover {
   color: yellow;
 }
+
 .info-outer-container {
   position: relative;
   display: inline-block;
 }
-.info-container {
+
+.info-container {}
+
+.image.boarder {
+  justify-content: center;
+  align-items: center;
+
 }
+
 #image {
-  width: 942px;
+  max-width: 100%;
   z-index: -1;
+  height: auto;
+  margin-left: 9%;
 }
+
 .intro-section {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   width: 800px;
 }
+
 .intro-header {
   color: white;
   font-size: 30px;
   text-align: center;
 }
+
 .intro-information {
   color: white;
   font-size: 20px;

@@ -1,13 +1,16 @@
 .clock-outer-container {
   position: relative;
   margin-top: 10px;
+  margin-left: 11%;
 }
+
 .clock-container {
   border: 5px solid black;
   width: 933px;
   height: 250px;
   background-color: grey;
 }
+
 .clock-sweden {
   position: relative;
   width: 200px;
@@ -27,6 +30,7 @@
   top: 25%;
   left: 48.5%;
 }
+
 .minute-hand {
   position: absolute;
   width: 4px;
@@ -36,6 +40,7 @@
   top: 15%;
   left: 49%;
 }
+
 .second-hand {
   position: absolute;
   width: 2px;
@@ -45,6 +50,7 @@
   top: 10%;
   left: 49.5%;
 }
+
 .center-circle {
   position: absolute;
   width: 6px;
