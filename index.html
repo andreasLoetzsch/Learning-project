@@ -12,54 +12,71 @@
     <link rel="stylesheet" href="styles/globalStyle.css" />
     <link rel="stylesheet" href="styles/underDanielList.css" />
     <link rel="stylesheet" href="styles/headerMenu.css" />
+    <link rel="stylesheet" href="styles/analog-clock.css" />
     <title>My Website</title>
   </head>
   <body>
     <header class="header-container">
-      <nav>
-        <ul id="menu">
-          <li><a href="#chokes" id="choke-link">Chokes</a></li>
-          <li>
-            <a href="#under-daniel" id="under-daniel-link">Under Daniel</a>
+      <nav class="nav">
+        <ul id="menu" class="ul">
+          <li class="link">
+            <a class="text" href="#chokes" id="choke-link">Chokes</a>
           </li>
-          <li><a href="#shopping-list" id="shopping-link">Shopping list</a></li>
-          <li>
-            <a href="#under-daniel-list" id="under-daniel-list-link"
+          <li class="link">
+            <a class="text" href="#under-daniel" id="under-daniel-link"
+              >Under Daniel</a
+            >
+          </li>
+          <li class="link">
+            <a class="text" href="#shopping-list" id="shopping-link"
+              >Shopping list</a
+            >
+          </li>
+          <li class="link">
+            <a
+              class="text"
+              href="#under-daniel-list"
+              id="under-daniel-list-link"
               >Under Daniel list</a
             >
           </li>
+          <a class="text" href="about-me" class="scroll-to-about-me"
+            >About me</a
+          >
         </ul>
       </nav>
     </header>
     <div class="main-component">
-      <div>
-        <div class="box-list-outer-container, hidden">
-          <form id="list">
-            <input
-              placeholder="Write name"
-              type="text"
-              class="input-name-list"
-            />
-            <input
-              class="search-under-daniel-list"
-              type="submit"
-              value="search"
-            />
-          </form>
-          <div class="box-list-container">
-            <div class="box-list" id="list-text"></div>
-          </div>
+      <div class="intro-outer-container">
+        <div class="intro-container">
+          <section class="intro-section">
+            <h1 class="intro-header">Welcome to my website!</h1>
+            <h2 class="intro-information">
+              This is project website for me to try things out and learn while
+              studying webb development.
+            </h2>
+          </section>
+          <img id="image" />
         </div>
-        <div class="message-container">
-          <button class="message-btn">message</button>
+      </div>
+      <div class="message-container, hidden">
+        <button class="message-btn">message</button>
+      </div>
+      <div class="clock-outer-container">
+        <div class="clock-container">
+          <div class="clock-sweden">
+            <div class="hour-hand" id="hour"></div>
+            <div class="minute-hand" id="minute"></div>
+            <div class="second-hand" id="second"></div>
+            <div class="center-circle"></div>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script src="script/message.js"></script>
-  <script src="script/shoppingList.js"></script>
-  <script src="script/underDanielList.js"></script>
   <script src="script/navigationMenu.js"></script>
+  <script src="script/analog-clock.js"></script>
   <script>
     document
       .querySelector(".message-btn")
