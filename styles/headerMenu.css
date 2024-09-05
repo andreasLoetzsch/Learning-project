@@ -3,6 +3,7 @@
   padding: 10px 0;
   color: #fff;
 }
+
 .ul {
   list-style-type: none;
   margin: 10;
@@ -22,16 +23,19 @@
 .text:hover {
   color: yellow;
 }
+
 .info-outer-container {
   position: relative;
   display: inline-block;
 }
-.info-container {
-}
+
+.info-container {}
+
 #image {
   width: 942px;
   z-index: -1;
 }
+
 .intro-section {
   position: absolute;
   top: 20%;
@@ -41,11 +45,13 @@
   padding: 10px 20px;
   width: 800px;
 }
+
 .intro-header {
   color: white;
   font-size: 30px;
   text-align: center;
 }
+
 .intro-information {
   color: white;
   font-size: 20px;
