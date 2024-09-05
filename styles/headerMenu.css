@@ -1,18 +1,18 @@
 .header-container {
   background-color: #333;
-  padding: 10px 0;
+  padding: 1% 0;
   color: #fff;
 }
 
 .ul {
   list-style-type: none;
-  margin: 10;
-  padding: 10;
+  margin: 1%;
+  padding: 0.05%;
 }
 
 .link {
   display: inline;
-  margin-right: 50px;
+  margin-right: 10%;
 }
 
 .text {
@@ -32,29 +32,31 @@
 .info-container {}
 
 #image {
-  width: 942px;
+  max-width: 100%;
   z-index: -1;
+  height: auto;
+  margin-left: 9%;
 }
 
 .intro-section {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  width: 800px;
+  padding: 1% 2%;
+  width: 65%;
 }
 
 .intro-header {
   color: white;
-  font-size: 30px;
+  font-size: 150%;
   text-align: center;
 }
 
 .intro-information {
   color: white;
-  font-size: 20px;
+  font-size: 130%;
   text-align: center;
 }
 

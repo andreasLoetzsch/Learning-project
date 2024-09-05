@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <link rel="stylesheet" href="styles/message.css" />
-    <link rel="stylesheet" href="styles/shoppingList.css" />
-    <link rel="stylesheet" href="styles/marreChoke.css" />
-    <link rel="stylesheet" href="styles/globalStyle.css" />
-    <link rel="stylesheet" href="styles/underDanielList.css" />
-    <link rel="stylesheet" href="styles/headerMenu.css" />
-    <link rel="stylesheet" href="styles/analog-clock.css" />
-    <title>My Website</title>
-  </head>
-  <body>
-    <header class="header-container">
-      <nav class="nav">
-        <ul id="menu" class="ul">
-          <li class="link">
-            <a class="text" href="#chokes" id="choke-link">Chokes</a>
-          </li>
-          <li class="link">
-            <a class="text" href="#under-daniel" id="under-daniel-link"
-              >Under Daniel</a
-            >
-          </li>
-          <li class="link">
-            <a class="text" href="#shopping-list" id="shopping-link"
-              >Shopping list</a
-            >
-          </li>
-          <li class="link">
-            <a
-              class="text"
-              href="#under-daniel-list"
-              id="under-daniel-list-link"
-              >Under Daniel list</a
-            >
-          </li>
-          <a class="text" href="about-me" class="scroll-to-about-me"
-            >About me</a
-          >
-        </ul>
-      </nav>
-    </header>
-    <div class="main-component">
-      <div class="intro-outer-container">
-        <div class="intro-container">
-          <section class="intro-section">
-            <h1 class="intro-header">Welcome to my website!</h1>
-            <h2 class="intro-information">
-              This is project website for me to try things out and learn while
-              studying webb development.
-            </h2>
-          </section>
-          <img id="image" />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/message.css" />
+  <link rel="stylesheet" href="styles/shoppingList.css" />
+  <link rel="stylesheet" href="styles/marreChoke.css" />
+  <link rel="stylesheet" href="styles/globalStyle.css" />
+  <link rel="stylesheet" href="styles/underDanielList.css" />
+  <link rel="stylesheet" href="styles/headerMenu.css" />
+  <link rel="stylesheet" href="styles/analog-clock.css" />
+  <title>My Website</title>
+</head>
+
+<body>
+  <header class="header-container">
+    <nav class="nav">
+      <ul id="menu" class="ul">
+        <li class="link">
+          <a class="text" href="#chokes" id="choke-link">Chokes</a>
+        </li>
+        <li class="link">
+          <a class="text" href="#under-daniel" id="under-daniel-link">Under Daniel</a>
+        </li>
+        <li class="link">
+          <a class="text" href="#shopping-list" id="shopping-link">Shopping list</a>
+        </li>
+        <li class="link">
+          <a class="text" href="#under-daniel-list" id="under-daniel-list-link">Under Daniel list</a>
+        </li>
+        <a class="text" href="about-me" class="scroll-to-about-me">About me</a>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-component">
+    <div class="intro-outer-container">
+      <div class="intro-container">
+        <section class="intro-section">
+          <h1 class="intro-header">Welcome to my website!</h1>
+          <h2 class="intro-information">
+            This is project website for me to try things out and learn while
+            studying webb development.
+          </h2>
+        </section>
+
       </div>
-      <div class="message-container, hidden">
-        <button class="message-btn">message</button>
-      </div>
-      <div class="clock-outer-container">
-        <div class="clock-container">
-          <div class="clock-sweden">
-            <div class="hour-hand" id="hour"></div>
-            <div class="minute-hand" id="minute"></div>
-            <div class="second-hand" id="second"></div>
-            <div class="center-circle"></div>
-          </div>
+    </div>
+    <div class="image-boarder">
+      <img id="image" />
+    </div>
+
+    <div class="message-container, hidden">
+      <button class="message-btn">message</button>
+    </div>
+    <div class="clock-outer-container">
+      <div class="clock-container">
+        <div class="clock-sweden">
+          <div class="number" style="--i: 1;">4</div>
+          <div class="number" style="--i: 2;">5</div>
+          <div class="number" style="--i: 3;">6</div>
+          <div class="number" style="--i: 4;">7</div>
+          <div class="number" style="--i: 5;">8</div>
+          <div class="number" style="--i: 6;">9</div>
+          <div class="number" style="--i: 7;">10</div>
+          <div class="number" style="--i: 8;">11</div>
+          <div class="number" style="--i: 9;">12</div>
+          <div class="number" style="--i: 10;">1</div>
+          <div class="number" style="--i: 11;">2</div>
+          <div class="number" style="--i: 12;">3</div>
+          <div class="hour-hand" id="hour"></div>
+          <div class="minute-hand" id="minute"></div>
+          <div class="second-hand" id="second"></div>
+          <div class="center-circle"></div>
         </div>
       </div>
     </div>
-  </body>
-  <script src="script/message.js"></script>
-  <script src="script/navigationMenu.js"></script>
-  <script src="script/analog-clock.js"></script>
-  <script>
-    document
-      .querySelector(".message-btn")
-      .addEventListener("click", function () {
-        messageBox({
-          status: "success",
-          title: "success",
-          description: "We successfully got the information",
-        });
+  </div>
+</body>
+<script src="script/message.js"></script>
+<script src="script/navigationMenu.js"></script>
+<script src="script/analog-clock.js"></script>
+<script>
+  document
+    .querySelector(".message-btn")
+    .addEventListener("click", function () {
+      messageBox({
+        status: "success",
+        title: "success",
+        description: "We successfully got the information",
       });
-  </script>
+    });
+</script>
+
 </html>
