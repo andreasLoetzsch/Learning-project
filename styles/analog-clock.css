@@ -33,7 +33,7 @@
   font-weight: bold;
   transform-origin: center center;
   transform: rotate(calc(30deg * var(--i))) translate(85px) rotate(calc(-30deg * var(--i)));
-  top: 50%;
+  top: 52.5%;
   left: 50%;
   transform-origin: 0, 0;
   margin-top: -15px;
